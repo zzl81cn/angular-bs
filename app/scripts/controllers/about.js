@@ -24,6 +24,7 @@ angular.module('angularBsApp')
 		// Use .then();
 		$http.get('http://localhost:9002/scripts/controllers/phone.json').then(function(response){
 			$scope.phones = response.data;
+			//console.log(data);
 		});
 
 		$scope.orderProp = 'age';
