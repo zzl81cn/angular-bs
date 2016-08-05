@@ -17,6 +17,8 @@ angular.module('angularBsApp')
 		];
 
 		// $http AJAX
+		//$http.get('/someUrl').success(successCallback);
+		//$http.post('/someUrl', data).success(successCallback);
 		// Use .success()
 		//$http.get('http://localhost:9002/scripts/controllers/phone.json').success(function(data){
 		//	$scope.phones = data;
