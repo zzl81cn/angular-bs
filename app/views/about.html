@@ -1,38 +1,10 @@
 <div class="col-md-12">
-  <h3>$http request&response</h3>
-  <div class="row">
-    <div class="col-md-6">
-      <!--Sidebar content-->
-
-      Search: <input ng-model="query">
-      Sort by:
-      <select ng-model="orderProp">
-        <option value="name">Alphabetical</option>
-        <option value="age">Newest</option>
-      </select>
-    </div>
-    <div class="col-md-6">
-      <!--Body content-->
-
-      <ul class="phones">
-        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
-        <!--<li ng-repeat="phone in phones">-->
-          <span>{{phone.name}}</span>
-          <p>{{phone.snippet}}</p>
-          <!--<img src={{phone.imageUrl}} alt=""/>-->
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
-<div class="col-md-12">
   <div class="panel panel-default">
     <div class="panel-heading">
       <h3 class="panel-title">xxxxx</h3>
     </div>
     <div class="panel-body">
-      <a class="btn btn-default" data-animation="am-fade-and-slide-top" data-template="views/about/modal-example.tpl.html" bs-modal="modal">xxx</a>&nbsp;
+      <a class="btn btn-default" data-animation="am-fade-and-slide-top" data-template="views/about/modal-example.tpl.html" bs-modal="modal">Jump consultant workbench</a>&nbsp;
       <a class="btn btn-default" data-animation="am-fade-and-scale" data-placement="cener" bs-modal="modal-object">data-obj</a>
     </div>
   </div>
@@ -188,3 +160,31 @@
   </accordion>
   <!-- accordion start -->
 </div>
+<div class="col-md-12">
+  <h3>$http request&response</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <!--Sidebar content-->
+
+      Search: <input ng-model="query">
+      Sort by:
+      <select ng-model="orderProp">
+        <option value="name">Alphabetical</option>
+        <option value="age">Newest</option>
+      </select>
+    </div>
+    <div class="col-md-6">
+      <!--Body content-->
+
+      <ul class="phones">
+        <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+          <!--<li ng-repeat="phone in phones">-->
+          <span>{{phone.name}}</span>
+          <p>{{phone.snippet}}</p>
+          <!--<img src={{phone.imageUrl}} alt=""/>-->
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
