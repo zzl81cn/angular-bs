@@ -10,14 +10,8 @@
 //angular.module('aboutModule')
 angular.module('aboutModule', ['angularBsAppDirectiveModule'])
 	.controller('AboutCtrl', function ($scope, $http) {
-
-		$scope.awesomeThings = [
-			'HTML5 Boilerplate',
-			'AngularJS',
-			'Karma'
-		];
-
 		// $http AJAX
+		var $ = $http;
 		//$http.get('/someUrl').success(successCallback);
 		//$http.post('/someUrl', data).success(successCallback);
 		// Use .success()
@@ -26,7 +20,7 @@ angular.module('aboutModule', ['angularBsAppDirectiveModule'])
 		//});
 
 		// Use .then();
-		$http.get('http://localhost:9002/scripts/controllers/phone.json').then(function(response){
+		$.get('http://localhost:9002/scripts/controllers/phone.json').then(function(response){
 			$scope.phones = response.data;
 			//console.log(data);
 		});
@@ -50,7 +44,12 @@ angular.module('aboutModule', ['angularBsAppDirectiveModule'])
 
 
 		// directive
-		$scope.rating = 3;
+		$scope.rating1 = 3;
+		$scope.rating2 = 5;
+		$scope.isReadOnly = true;
+		$scope.rateFunction = function(rating){
+			console.log("Rating selected: " + rating);
+		}
 
 
 		$scope.items = ['Item 1', 'Item 2', 'Item 3'];

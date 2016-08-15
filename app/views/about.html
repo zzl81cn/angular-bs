@@ -2,10 +2,16 @@
 <div class="col-md-12">
     <div class="panel panel-default">
         <div class="panel-heading">
-            <h3 class="panel-title">star-rating directive</h3>
+            <h3 class="panel-title">Angular star-rating directive</h3>
         </div>
         <div class="panel-body">
-            <star-rating ng-model="rating" max="10"></star-rating>
+            <div star-rating ng-model="rating1" max="10" on-rating-selected="ratingFunction(rating)"></div>
+            <star-rating ng-model="rating2" readonly="isReadOnly"></star-rating>
+            <label for="">
+                <input type="checkbox" ng-model="isReadOnly"/>IsReadOnly
+            </label>
+            <p><strong>Rating1:</strong>{{rating1}}</p>
+            <p><strong>Rating2:</strong>{{rating2}}</p>
         </div>
     </div>
 </div>
