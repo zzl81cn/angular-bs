@@ -7,7 +7,8 @@
  * # AboutCtrl
  * Controller of the angularBsApp
  */
-angular.module('angularBsApp')
+//angular.module('aboutModule')
+angular.module('aboutModule', ['angularBsAppDirectiveModule'])
 	.controller('AboutCtrl', function ($scope, $http) {
 
 		$scope.awesomeThings = [
@@ -46,6 +47,11 @@ angular.module('angularBsApp')
 				content: 'Dynamic Group Body - 2'
 			}
 		];
+
+
+		// directive
+		$scope.rating = 3;
+
 
 		$scope.items = ['Item 1', 'Item 2', 'Item 3'];
 
@@ -92,4 +98,5 @@ angular.module('angularBsApp')
 				document.getElementById("result").innerHTML = "Sorry, your browser does not support web storage...";
 			}
 		}
+
 	});

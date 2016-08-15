@@ -161,7 +161,11 @@
         <img src="images/yeoman.png" alt="I'm Yeoman"><br>
         Always a pleasure scaffolding your apps.
       </p>
-      <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+      <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="fa fa-check"></span></a></p>
+      <ul>
+        <li ng-repeat="thing in awesomeThings">{{thing}}</li>
+        <li ng-repeat="thing2 in bwesomeThings">{{thing2}}</li>
+      </ul>
     </div>
 
     <div class="row marketing">

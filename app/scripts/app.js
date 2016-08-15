@@ -20,7 +20,8 @@ angular
     'ui.router',
     'mgcrea.ngStrap',
     'ngDraggable',
-    'ng-mfb'
+    'ng-mfb',
+      'aboutModule'
   ])
   .config(function ($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/root/main');
