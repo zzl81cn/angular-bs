@@ -14,3 +14,7 @@ Running `grunt test` will run the unit tests with karma.
 ## $http
 
 AJAX loading json.
+
+## Directive
+
+Star Rating
